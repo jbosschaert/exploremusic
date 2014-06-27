@@ -1,0 +1,177 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    
+}
+
+header {
+    margin-right: 80px;
+    margin-top: 60px;
+    padding: 10px;
+    text-align: right;
+    display: block;
+}
+
+section {
+    margin: 30px;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Francois One', serif;
+    color: #4D565E;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Francois One', serif;
+    color: #4D565E;
+    text-transform: uppercase;
+    text-indent: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 10px;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    padding-top: 5px;
+}
+a {
+   text-decoration: none; 
+   color: #000000;
+   -webkit-transition: color .25s;
+   -moz-transition: color .25s;
+   -ms-transition: color .25s;
+   -o-transition: color .25s;
+   transition: color .25s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+         /*navigation bar */
+#cssmenu {
+    background: #4e8cc2;
+    width: auto;
+    
+}
+
+#cssmenu ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    line-height: 1;
+    display: block;
+    zoom: 1;
+}
+
+#cssmenu ul:after {
+    content: '';
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#cssmenu ul li {
+    float: left;
+    display: block;
+    padding: 0;
+}
+
+#cssmenu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding:12px 25px;
+    font-family: 'Francois One', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    text-indent: 30px;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+#cssmenu ul li a:hover {
+    color: #333333;
+}
+
+#cssmenu ul li a:hover:before {
+    width: 100%;
+}
+
+#cssmenu ul li a:hover:after {
+    content: '';
+    display: block;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #333333;
+    -webkit-transition: width .25s;
+    -moz-transition: width .25s;
+    -ms-transition: width .25s;
+    -o-transition: width .25s;
+    transition: width .25s;
+}
+
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+    display: none;
+}
+
+#cssmenu ul li.active a {
+    color: #333333
+}
+
+#cssmenu ul li.active a:before {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #cssmenu ul li {
+        float: none;
+    }
+    
+    #cssmenu ul li a {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -box-sizing: border-box;
+    }
+    
+    #cssmenu ul li a:after {
+        display: none;
+    }
+    
+    #cssmenu ul li a:before {
+        height: 1px;
+        background: #ffffff;
+        width: 100%;
+        opacity: .2;
+    }
+    
+    #cssmenu ul li.last > a:before,
+    #cssmenu ul li:last-child > a:before {
+        display: none;
+    }
+}
