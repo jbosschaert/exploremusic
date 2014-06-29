@@ -21,18 +21,48 @@
     display: block;
 }
 
-#main {
-    width: 604px;
+#main { 
+    width: 800px;
+    margin: 30px;
+    padding: 10px;
+    float: left;
+}
+
+#mainindex {
+    width: 579px;
     height: 100%;
     float: left;
     margin: 10px;
+    padding-top: 25px;
+    padding-left: 25px;
+    min-width: 579px;
+    display: block;
 }
 
 #aside {
-    width: 316px;
+    width: 291px;
     height: 100%;
     float: right;
     margin: 10px;
+    padding-top: 60px;
+    padding-right: 35px;
+    padding-left: 10px;
+}
+
+#image {
+    display:block;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto auto;
 }
 
 h1 {
@@ -53,6 +83,13 @@ h2 {
     padding-top: 10px;
     padding-bottom: 0;
     margin: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    font-family: 'Francois One', serif;
+    color: #4D565E;
+    text-transform: uppercase;
 }
 
 p{
